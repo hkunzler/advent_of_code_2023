@@ -1,6 +1,6 @@
 # Advent of Code - 2023
 https://adventofcode.com/2023
-# =============================
+# ===========================
 #
 ## --- Day 1: Trebuchet?! ---
 Full description: [2023 Day 1](https://adventofcode.com/2023/day/1)
@@ -88,3 +88,44 @@ Power of
 - Game 5: `36`
 
 Sum of powers: `2286`
+
+## --- Day 3: Gear Ratios ---
+Full description: [2023 Day 3](https://adventofcode.com/2023/day/3)
+
+My solution: [day_three.py](./day_three.py)
+
+Language: `Python`
+#
+### --- Part One ---
+
+Calculate the sum of all "part numbers" in an engine schematic, where a part number is defined as any number adjacent (including diagonally) to a symbol. Periods (.) do not count as symbols.
+
+#### Example:
+```
+467..114..
+...*......
+..35..633.
+......#...
+617*......
+.....+.58.
+..592.....
+......755.
+...$.*....
+.664.598..
+```
+
+Numbers not adjacent to symbols: `114, 58`
+
+Sum of adjacent numbers or "part numbers": `467 + 35 + 633 + 617 + 592 + 755 + 664 + 598 = 4381`
+
+### --- Part Two ---
+
+Find the gear ratio of every gear in the engine schematic and add them up. A gear is any * symbol that is adjacent to exactly two part numbers. 
+The gear ratio is calculated by multiplying these two part numbers together. In the provided example, there are two gears with gear ratios of 16345 and 451490, respectively. 
+The final answer is the sum of all gear ratios in the schematic. 
+
+#### Example:
+
+Using the same schematic as above, the gear ratios are: `16345, 451490`
+
+Sum of gear ratios: `467835`
